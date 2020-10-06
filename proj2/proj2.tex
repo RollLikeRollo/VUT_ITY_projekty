@@ -1,0 +1,149 @@
+\documentclass[a4paper,11pt,times,twocolumn]{article}
+
+\usepackage[czech]{babel}
+\usepackage[IL2]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{multicol}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{stackrel}
+\usepackage{times}
+\usepackage{amsthm}
+
+\newcommand{\N}{\mathbb{N}}
+
+ \geometry{
+ a4paper,
+ text={180mm,250mm},
+ left=15mm,
+ top=25mm,
+ }
+ 
+\newtheorem{theorem}{Definice}
+\newtheorem{veta}{Věta}
+ 
+ %konec hlavicky
+
+\begin{document}
+
+
+\begin{titlepage}
+\begin{justify}
+\Huge
+
+\centering{\textsc{{{Fakulta informačních technologií\\ Vysoké učení technické v Brně\\}}}}
+\end{justify}
+\vspace{\stretch{0.382}}
+\begin{center}
+\LARGE
+\textbf{\setstretch{0.3}{
+Typografie a publikování – 2. projekt\\[0.4em]
+Sazba dokumentů a matematických výrazů\\
+\vspace{\stretch{0.618}}}}
+\end{center}
+
+\Large
+{\LARGE \today \hfill Jan Zbořil (xzbori20)}
+\end{titlepage}
+
+\section*{Úvod}
+
+V této úloze si vyzkoušíme sazbu titulní strany, matematických vzorců, prostředí a dalších textových struktur obvyklých pro technicky zaměřené texty (například rovnice (\ref{eq2}) nebo Definice \ref{Definice 2} na straně 1). Pro vytvoření těchto odkazů používáme příkazy \verb \label , \verb \ref  a \verb \pageref .
+
+\par
+\setlength{\parindent}{0.4em}
+Na titulní straně je využito sázení nadpisu podle optického středu s využitím zlatého řezu. Tento postup byl
+probírán na přednášce. Dále je použito odřádkování se zadanou relativní velikostí 0.4em a 0.3em.
+
+\section{Matematický text}
+
+Nejprve se podíváme na sázení matematických symbolů
+a výrazů v plynulém textu včetně sazby definic a vět s využitím balíku \verb amsthm . Rovněž použijeme poznámku pod čarou s použitím příkazu  \verb \footnote . Někdy je vhodné použít konstrukci \verb ${}$ ~nebo \verb \mbox{} , která říká, že (matematický) text nemá být zalomen. V následující definici je nastavena mezera mezi jednotlivými položkami \verb \item  na 0.05em.
+
+\begin{theorem} \label{Definice 1}
+\emph{Turingův stroj} (TS) je definován jako šestice tvaru \(M = (Q, \Sigma, \Gamma, \delta, q_0, q_F )\), kde:
+\begin{itemize}
+    \setlength\itemsep{0.05em}
+    \item Q je konečná množina \emph{vnitřních (řídicích) stavů,}
+    \item \(\Sigma\) je konečná množina symbolů nazývaná \emph{vstupní abeceda,} \( \Delta \notin \Sigma,\)
+    \item $\Gamma$ je konečná množina symbolů, $ \Sigma \subset \Gamma$, $\Delta \in \Gamma$, nazývaná \emph{pásková abeceda,}
+    \item $\delta$ : $(Q\backslash \{q_F\} ) \times \Gamma \rightarrow Q \times (\Gamma \cup \{L, R\})$, kde $L, R \notin \Gamma$, je parciální přechodová funkce, a
+    \item $q_0 \in Q$ je počáteční stav a $q_f \in Q$ je koncový stav.
+\end{itemize}
+\end{theorem}
+
+\par
+Symbol $\Delta$ značí tzv. \emph{blank} (prázdný symbol), který se
+vyskytuje na místech pásky, která nebyla ještě použita.
+
+\emph{Konfigurace pásky} se skládá z nekonečného řetězce, který reprezentuje obsah pásky a pozice hlavy na tomto řetězci. Jedná se o prvek množiny $ \{ \gamma \Delta^\omega ~|~ \gamma \in \Gamma^* \} \times \mathbb{N} \footnote{Pro libovolnou abecedu $\Sigma$ je $\Sigma^\omega$ množina všech \emph{nekonečných} řetězců nad $\Sigma$, tj. nekonečných posloupností symbolů ze $\Sigma$.}.$
+\emph{Konfiguraci pásky} obvykle zapisujeme jako $ \Delta xyz \underline{z} x \Delta $ ...
+(podtržení značí pozici hlavy). Konfigurace stroje je pak dána stavem řízení a konfigurací pásky. Formálně se jedná o prvek množiny $ \{Q \times \gamma \Delta^\omega ~|~ \gamma \in \Gamma^*  \} \times \mathbb{N} $ .
+
+\subsection{Podsekce obsahující větu a odkaz}
+\begin{theorem} \label{Definice 2}
+\emph{Řetězec \emph{w} nad abecedou $\Sigma$ je přijat TS} M
+jestliže M při aktivaci z počáteční konfigurace pásky $\underline{\Delta} w \Delta...$ a počátečního stavu $q_0$ zastaví přechodem do koncového stavu \mbox{$q_F$, tj. $(q_0, \Delta w \Delta^\omega, 0) \stackrel[M]{*}{\vdash} (q_F , \gamma, n)$} pro
+nějaké~\mbox{$ \gamma \in \Gamma^* a~n \in \N $}. 
+\par
+Množinu $L(M) = \{ w ~ | ~ w $ je přijat $TS~M\} \subseteq \Sigma^*$ nazýváme \emph{jazyk přijímaný TS} M.
+\end{theorem}
+\par
+Nyní si vyzkoušíme sazbu vět a důkazů opět s použitím balíku \verb amsthm .
+\begin{veta}
+Třída jazyků, které jsou přijímány TS, odpovídá rekurzivně vyčíslitelným jazykům.
+\end{veta}
+
+\begin{proof}
+V důkaze vyjdeme z Definice \ref{Definice 1} a \ref{Definice 2}.
+\end{proof}
+
+\section{Rovnice}
+Složitější matematické formulace sázíme mimo plynulý
+text. Lze umístit několik výrazů na jeden řádek, ale pak je
+třeba tyto vhodně oddělit, například příkazem \verb \quad .
+
+\begin{center}
+    $\sqrt[i]{x^3_i}$\quad kde $x_i$ je \textit{i}-té sudé číslo $\quad y_i^{2 \cdot y_i} \ne y_i^{y_i^{y_i}}$
+\end{center}
+
+V rovnici (\ref{eq1}) jsou využity tři typy závorek s různou explicitně definovanou velikostí.
+
+\begin{equation} \label{eq1}
+x = \bigg\{ \Big( [a+b]*c \Big) ^d \oplus 1 \bigg\}
+\end{equation}
+
+\begin{equation} \label{eq2}
+y = \lim_{x \to \infty} \frac{\sin^2 x + \cos^2 x}{\frac{1}{\log_{10} x}}
+\end{equation}
+
+V této větě vidíme, jak vypadá implicitní vysázení limity $\lim_{n \to \infty} f(n)$ v normálním odstavci textu. Podobně je to i s dalšími symboly jako \mbox{$\sum^n_{i=1} 2^i$  či  $\cap_{A \in \beta } A $}.
+
+V případě vzorců $\lim\limits_{x \to \infty} f(n) $ a $\sum\limits_{i=1}^n 2^i $ jsme si vynutili méně úspornou sazbu příkazem \verb \limits .
+\section{Matice}
+Pro sázení matic se velmi často používá prostředí \verb array  a závorky (\verb \left , \verb \right ).
+\begin{center}
+$$
+    \left( \begin{array}{ccc}
+    a+b  &  \widehat{\xi + \omega}  &  \hat{\pi}\\
+    \vec{\textsf{a}}  &  \stackrel{\longleftrightarrow}{AC}  &  \beta\\
+    \end{array}
+    \right) = 1 \iff \mathbb{Q} = \mathcal{R}
+$$
+\end{center}
+
+Prostředí \verb array  lze úspěšně využít i jinde.
+
+    $$ \left( \begin{array}{c}
+    n\\k 
+    \end{array} \right) = \left\{ \begin{array}{cl} 0 & \textrm{pro } k < 0 \textrm{ nebo } k > n \\
+    \frac{n!}{k!(n-k)!} & \textrm{pro } 0 \leq k \leq n. \\
+    \end{array}\right.
+    $$
+
+\end{document}

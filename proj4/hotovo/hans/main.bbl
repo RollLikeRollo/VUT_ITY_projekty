@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\DOI}[1]{DOI:\discretionary{}{}{}#1}\else
+  \providecommand{\DOI}{DOI:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Wiki:2004:Typo}
+{W}ikipedia contributors: Typografie. Wikimedia Foundation, 2004, [Online,
+  datum citace~2.~4.~2020].
+\newline\urlprefix\url{https://cs.wikipedia.org/wiki/Typografie}
+
+\bibitem{Design:2011}
+Designhistory.org: Typographic milestones. \emph{Design History}, 2011,
+  [Online, datum citace 2. 4. 2020].
+\newline\urlprefix\url{"http://www.designhistory.org/Type\_milestones\_pages/Panatograph.html"}
+
+\bibitem{Donev:2015}
+Donev, A.: \emph{Typography in Advertising}. Dizertační práce, Univerzita
+  Tomáše Bati ve Zlíně, Fakulta multimediálních komunikací, 2015, strana
+  39.
+\newline\urlprefix\url{http://hdl.handle.net/10563/36843}
+
+\bibitem{Antikva:2006}
+{P}řispěvatelé Encyklopedie~knihy: Antikva. Encyklopedie knihy, 2019,
+  [Online, datum citace 2. 4. 2020].
+\newline\urlprefix\url{http://www.encyklopedieknihy.cz/index.php?title=Antikva\&oldid=17673}
+
+\bibitem{Eric:1931}
+Eric, G.: \emph{An Essay on Typography}. David R. Godine, druhé vydání,
+  1993, ISBN 978-0-87923-950-3.
+
+\bibitem{Fabel:1981}
+Fabel, K.: \emph{Současná typografie}. Odeon, první vydání, 1981, ISBN
+  01-508-81.
+
+\bibitem{Graham:1992}
+Graham, L.~M.: \emph{Typography and graphic arts technology : a discourse of
+  selected historical interrelationships}. Dizertační práce, Iowa State
+  University, Department of Art and Design, 1992, strana 55-58.
+\newline\urlprefix\url{https://lib.dr.iastate.edu/cgi/viewcontent.cgi?article=18621\&context=rtd}
+
+\bibitem{Latex:2020}
+Overleaf: Learn LaTeX in 30 minutes. Overleaf contributors, 2020, [Online,
+  datum citace 2. 4. 2020].
+\newline\urlprefix\url{"https://www.overleaf.com/learn/latex/Learn\_LaTeX\_in\_30\_minutes"}
+
+\bibitem{Eye:2012}
+Paul~Shaw, e.~a.: The line of beauty. \emph{Eye magazine}, Summer 2012: str.
+  103 – 106, [Online, datum citace 2. 4. 2020].
+\newline\urlprefix\url{http://www.eyemagazine.com/feature/article/the-line-of-beauty}
+
+\bibitem{Typografia:1892}
+{P}olygrafický~průmysl Praha~(firma): Historie zavedení umění
+  knihtiskařského v Dánsku. \emph{Typografia}, ročník~4, červenec 1892:
+  str. 103–106, ISSN 0322-9068.
+
+\end{thebibliography}

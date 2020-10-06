@@ -1,0 +1,63 @@
+\documentclass[a4paper,11pt,times]{article}
+
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+
+
+\usepackage[numbers]{natbib}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{url}
+\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
+\usepackage{hyperref}
+\usepackage{pdflscape}
+
+ \geometry{
+ a4paper,
+ text={170mm,240mm},
+ left=20mm,
+ top=30mm,
+ }
+
+ %konec hlavicky
+
+\begin{document}
+
+\begin{titlepage}
+\begin{justify}
+\Huge
+
+\centering{\textsc{{{Vysoké učení technické v Brně \\ \huge{Fakulta informačních technologií}\\}}}}
+\end{justify}
+\vspace{\stretch{0.382}}
+\begin{center}
+\large
+\textbf{\setstretch{0.3}{
+Typografie a publikování – 4. projekt\\[0.4em]
+\LARGE
+Citace\\
+\vspace{\stretch{0.618}}}}
+\end{center}
+
+\Large
+{\LARGE \today \hfill Jan Zbořil (xzbori20)}
+\end{titlepage}
+
+\section*{O \LaTeX u}
+\LaTeX~je software pro sazbu dokumentů. Není to program typu Microsoft Word, podobá se spíše tvorbě webových stránek pomocí HTML, viz \cite{KottwitzLatexBegginersGuide}. \LaTeX~je dostupný zdarma jako open source software. Skládá se z velkého množství značkovacích příkazů, viz \cite{KopkaGuideToLatex}.
+
+Existuje mnoho způsobů, jak se slovo \LaTeX~vyslovuje, mezi ně patří například [leitek], [la:tek], [lateks] nebo ['leiteks]. Správná česká výslovnost je však [latech], dostupné na \cite{wiki:Latex}.
+
+Tvorba dokumenů v systému \LaTeX~ není triviální, začátečník však může využít mnoha internetových zdrojů, jež ho naučí, jak napříkald správně sázet v dokumentu obrázky, viz \cite{MartinekObrazky}, nebo jak vyzrát na zrádnou podporu českého jazyka, dostupné na \cite{MartinekCestina}.
+
+\LaTeX~je využíván především pro psaní vědeckých prací, například tento článek \cite{LatexClanek} byl vytvořen pomocí \LaTeX u, či vysokoškolských závěrečných prací. Za příklad uvádím dvě práce z FIT VUT: \cite{FIT1} a \cite{FIT2}.
+
+Na FIT VUT se od roku 2005, dle \cite{FITPUB8568}, vyučuje předmět \uv{Typografie a publikování}, který seznamuje studenty s prací v \LaTeX u. Historie odvětví typografie je však daleko delší, příkladem může být například  časopis \uv{Typografia} vycházející od roku 1888 \cite{Typografia}.
+
+\newpage
+
+\bibliographystyle{czechiso}
+\bibliography{references}
+\end{document}

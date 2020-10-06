@@ -1,0 +1,65 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\DOI}[1]{DOI:\discretionary{}{}{}#1}\else
+  \providecommand{\DOI}{DOI:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{FIT2}
+Dytrych, J.: {\selectlanguage{czech}\emph{S\'{e}mantick\'{a} anotace textu}}.
+  Diserta\v{c}n\'{i} pr\'{a}ce, Vysok\'{e} u\v{c}en\'{i} technick\'{e} v
+  Brn\v{e}, Fakulta informa\v{c}n\'{i}ch technologi\'{i}, 2017.
+\newline\urlprefix\url{https://www.fit.vut.cz/study/phd-thesis/548/}
+
+\bibitem{KopkaGuideToLatex}
+Kopka, H.; Daly, P.~W.: \emph{\LaTeX~Beginner's Guide}. Garlow, UK: Addison
+  Wesley Longman Limited, Čtvrté vydání, 2004, ISBN 0-201-39825-7, 646 s.
+
+\bibitem{KottwitzLatexBegginersGuide}
+Kottwitz, S.: \emph{\LaTeX~Beginner's Guide}. Birmingham, UK: Packt Publishing,
+  březen 2011, ISBN 978-1-847199-86-7, 314 s.
+
+\bibitem{LatexClanek}
+Kruglov, A.; Chiryshev, A.; Shishko, E.: Applying of the NVIDIA CUDA to the
+  video processing in the task of the roundwood volume estimation. In
+  \emph{{ITM} Web of Conferences}, ročník~8, editace I.~Balk; A.~Raigorodsky;
+  E.~Nikulchev, {EDP} Sciences, 2016, str.~7,
+  \DOI{https://doi.org/10.1051/itmconf/20160801009}.
+\newline\urlprefix\url{https://www.itm-conferences.org/articles/itmconf/abs/2016/03/itmconf_icbda2016_01009/itmconf_icbda2016_01009.html}
+
+\bibitem{FITPUB8568}
+K\v{r}ena, B.: {\selectlanguage{czech}Zaveden\'{i} p\v{r}edm\v{e}tu Typografie
+  a publikov\'{a}n\'{i} na FIT VUT v Brn\v{e}}. In \emph{Informatika XXI/2008},
+  Konvoj, 2008, ISBN 978-80-7302-151-1, s. 57--58.
+\newline\urlprefix\url{https://www.fit.vut.cz/research/publication/8568}
+
+\bibitem{MartinekCestina}
+Martinek, D.: Jak sázet česky. říjen 2008, [Online; přístup
+  22.~března~2020].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/~martinek/latex/czech.html}
+
+\bibitem{MartinekObrazky}
+Martinek, D.: Jak vkládat obrázky. únor 2008, [Online; přístup
+  22.~března~2020].
+\newline\urlprefix\url{http://www.fit.vutbr.cz/~martinek/latex/figures.html}
+
+\bibitem{Typografia}
+{Polygrafický průmysl Praha (firma)}: \emph{Typografia}, ročník~1, říjen
+  1888: str.~44, ISSN 0322-9068.
+\newline\urlprefix\url{http://www.digitalniknihovna.cz/mzk/view/uuid:def10450-a9ed-11e7-920d-005056827e51?page=uuid:6862cc80-a9f0-11e7-8394-5ef3fc9ae867}
+
+\bibitem{FIT1}
+Píč, K.: {\selectlanguage{czech}\emph{Webová aplikace pro hodnocení kvality
+  obrazu a videa}}. Diplomov\'{a} pr\'{a}ce, Vysok\'{e} u\v{c}en\'{i}
+  technick\'{e} v Brn\v{e}, Fakulta informa\v{c}n\'{i}ch technologi\'{i}, 2019.
+\newline\urlprefix\url{https://www.fit.vut.cz/study/thesis/22127/}
+
+\bibitem{wiki:Latex}
+{Wikipedia contributors}: LaTeX --- {W}ikipedia{,} The Free Encyclopedia. 2004,
+  [Online; přístup 21.~března~2020].
+\newline\urlprefix\url{https://cs.wikipedia.org/wiki/LaTeX}
+
+\end{thebibliography}

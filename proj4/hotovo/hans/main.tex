@@ -1,0 +1,40 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[czech]{babel}
+\usepackage[IL2]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[left=2cm, top=3cm, text={17cm, 24cm}]{geometry}
+\usepackage{url}
+\DeclareUrlCommand\url{\def\UrlLeft{<}\def\UrlRight{>} \urlstyle{tt}}
+\usepackage{hyperref}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+{\Huge\textsc{Vysoké učení technické v~Brně}}\\[1em]
+{\huge\textsc{Fakulta informačních technologií}}
+\\\vspace{\stretch{0.382}}
+{\LARGE Typografie a~publikování -- 4. projekt}\\[0.5em]
+{\Huge Bibliografické citace}\\
+\vspace{\stretch{0.618}}
+\end{center}
+{\Large 2. 4. 2020 \hfill Jan Zádrapa (xzadra03)}
+\end{titlepage}
+
+\section*{Historie typografie}
+Začátek typografických dějin se připisuje vynálezu knihtisku. Od 2.~poloviny 15.~století se tak začaly šířit knihy stejně jako různé druhy písma, viz. \cite{Donev:2015}. S~uměním knihtiskařským se můžeme seznámit například v časopise Typografia, viz. \cite{Typografia:1892} 
+
+Písmo se rozdělilo na dvě podoby. Novogotickou a~humanistickou. Novogotické písmo se využívalo především v~Německu, ale také v~Česku. Zvláště jeho varianta Frakturschrift, později švabach, je velice zajímavá. V~Německu toto písmo vydrželo až do 2.~světové války.
+V~ostatních zemích se novogotické písmo neuchytilo a~bylo nahrazeno antikvou. Co to je antikva a~jak vypadá se můžete podívat zde \cite{Antikva:2006}. Jako centrum vývoje antikvy můžeme označit Itálii, odkud pochází většina jejich průkopníků, viz \cite{Wiki:2004:Typo}.
+
+Pro rozvoj typografie bylo důležité rokoko. V~textech se začaly objevovat různé oddělovače odstavců (např. grafické dekorace). Písmo bylo velice rozličné, především rozdíly mezi tenkými a~širokými liniemi písma byly u~vzniku spousty variant písma.
+
+V~19.~století zažila typografie velký úpadek díky masivní produkci novin a~průmyslové výrobě. S~obnovou se začalo na konci téhož století ve~Velké Británii. O~této problematice se více dozvíte zde \cite{Eric:1931}. Pro sazbu se začaly používat stále automatizovanější stroje, viz \cite{Design:2011}. Obnova byla dokonána ve 20. století, kdy se ruční sazba začala nahrazovat digitálním tiskem. Tisk se tak stal o mnoho snazší viz. \cite{Graham:1992}. 
+
+S~příchodem digitálního tisku se zprvu počet fontů snižoval kvůli nedostatku kapacity v~zařízeních. V~posledních letech se počet fontů naopak rozšiřuje vzhledem k~dostatku paměti v~zařízeních. Do knih se vrací kaligrafické fonty, viz \cite{Eye:2012} Pro sázení textu můžeme používat např. prostředí Microsoft Word nebo \LaTeX.Na tomto odkaze se můžete naučit základy \LaTeX u \cite{Latex:2020}. Moderní dějiny a~k~tomu nejslavnější typografy najdete v~knize Současná typografie \cite{Fabel:1981}.
+
+\newpage
+\bibliographystyle{czechiso}
+\bibliography{bibliography.bib}
+
+\end{document}
